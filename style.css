@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    font-family: "Karma", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    background-color: white;
+    padding: 0 50px;
+}
+
+.left-side {
+    width: 50px;
+    height: 75px;
+    transition: all 0.5s;
+}
+
+.left-side:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.left-side .fa-solid {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#left-side-content {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#left-side-content a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding: 15px;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#left-side-content a:hover {
+    color: white;
+    background-color: gray;
+}
+
+.food-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px 15px;
+    width: 80%;
+    margin: auto;
+    padding-top: 75px;
+    margin-top: 50px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    margin-bottom: -20px;
+    object-fit: cover;
+}
+
+.main-txt {
+    font-size: 	1.5000em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sub-txt {
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .food-section {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        padding: 0 5px 0 0;     
+    }
+}
+
+.next-pages {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.next-pages a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.next-pages a:hover {
+    background-color: black;
+    color: white;
+}
+
+#second-link {
+    background-color: black;
+    color: white;
+}
+
+#second-link:hover {
+    background-color: rgb(212, 211, 211);
+    color: black;
+}
+
+.about-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 43px;
+    margin-top: 70px;
+}
+
+.about-main-txt {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.middle-txt {
+    margin: 0 auto 35px;
+}
+
+.middle-txt img {
+    max-width: 100%;
+}
+
+.bottom-title-txt {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.bottom-second-txt {
+    margin-bottom: -1px;
+}
+
+.bottom-main-txt {
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.for-footer,
+.for-blog-post,
+.for-popular-tags {
+    flex: 1;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    border-top: 1px solid rgb(240, 240, 240);
+    padding-top: 75px;
+    margin-bottom: 30px;
+}
+
+.footer-top-txt {
+    font-size: 24px;
+    margin-top: -5px; 
+}
+
+.first-img,
+.second-img {
+    cursor: pointer;
+    padding-left: 15px;
+    transition: all 0.5s;
+}
+
+.first-img:hover,
+.second-img:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.first-img img,
+.second-img img {
+    width: 50px;
+}
+
+.img-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    text-align: left;
+}
+
+.second-img {
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+.container-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+.activities {
+    padding: 0 4px;
+    color: white;
+    background-color: rgb(99, 99, 99);
+    font-size: 14px;
+}
+
+#first-act {
+    background-color: black;
+    font-size: 15px; 
+}
+
+@media (max-width: 700px) {
+    .footer-container {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+
+
